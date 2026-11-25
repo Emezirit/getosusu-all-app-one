@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Opening OSUSU BY PACKNPAY…</title>
+</head>
+<body style="margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#6b7280;background:#fafafa">
+<p>Opening OSUSU BY PACKNPAY…</p>
+<script>
+(function(){
+  var c={"ios":"https://apps.apple.com/us/app/osusu-pay-small-small/id6742461026","android":"https://play.google.com/store/apps/details?id=com.osusu.osusu_mobile","windows":"https://www.getosusu.com/","mac":"","fallback":""};
+  var ua=navigator.userAgent||"";
+  var isMac=/Macintosh|Mac OS X/i.test(ua)||/^Mac/i.test(navigator.platform||"");
+  // Safari on iPad reports a Mac by default; touch support tells the two apart.
+  var touch=(navigator.maxTouchPoints||0)>1;
+  var os="";
+  if(/Android/i.test(ua)){os="android";}
+  else if(/iPhone|iPad|iPod/i.test(ua)||(isMac&&touch)){os="ios";}
+  else if(/Windows/i.test(ua)){os="windows";}
+  else if(isMac){os="mac";}
+  window.location.replace((os&&c[os])||c.fallback||c.ios||c.android||c.windows||c.mac);
+})();
+</script>
+<noscript><p>Choose your platform: <a href="https://apps.apple.com/us/app/osusu-pay-small-small/id6742461026">App Store</a> &#183; <a href="https://play.google.com/store/apps/details?id=com.osusu.osusu_mobile">Google Play</a> &#183; <a href="https://www.getosusu.com/">Windows</a></p></noscript>
+</body>
+</html>
